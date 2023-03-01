@@ -40,7 +40,7 @@ public class MessageReceiverWorkerWithBackOffRetry : BackgroundService
     }
 
 
-    private static int retryCount = 5;
+    private static int maxRetries = 5;
     
     private async Task HandleMessageAsync (ProcessMessageEventArgs processMessageEventArgs)
     {
@@ -64,7 +64,7 @@ public class MessageReceiverWorkerWithBackOffRetry : BackgroundService
             }
 
             // If there are more retries available
-            if((int)retryMessage.ApplicationProperties["retry-count"] < retryCount)
+            if((int)retryMessage.ApplicationProperties["retry-count"] < maxRetries)
             {
                 var retryCount = (int)retryMessage.ApplicationProperties["retry-count"] + 1;
                 var interval = 5 * retryCount;
