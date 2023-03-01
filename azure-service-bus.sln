@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusDemo.MessageRecei
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusDemo.FunctionApp", "ServiceBusDemo.FunctionApp\ServiceBusDemo.FunctionApp.csproj", "{24ACF082-1BEC-44C7-B9CB-47D813B4B9D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusDemo.IsolatedFunctionApp", "ServiceBusDemo.IsolatedFunctionApp\ServiceBusDemo.IsolatedFunctionApp.csproj", "{53061E08-784C-4C51-8C2F-84C1B5CCC158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{24ACF082-1BEC-44C7-B9CB-47D813B4B9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24ACF082-1BEC-44C7-B9CB-47D813B4B9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24ACF082-1BEC-44C7-B9CB-47D813B4B9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53061E08-784C-4C51-8C2F-84C1B5CCC158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53061E08-784C-4C51-8C2F-84C1B5CCC158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53061E08-784C-4C51-8C2F-84C1B5CCC158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53061E08-784C-4C51-8C2F-84C1B5CCC158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
