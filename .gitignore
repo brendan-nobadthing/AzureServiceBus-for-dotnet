@@ -350,3 +350,8 @@ MigrationBackup/
 .ionide/
 
 .idea/
+
+# terraform stuff
+env.sh 
+.terraform/
+.terraform.tfstate.*
